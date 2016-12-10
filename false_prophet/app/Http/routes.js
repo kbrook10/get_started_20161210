@@ -19,6 +19,6 @@
 const Route = use('Route')
 
 //Create connection to match the URLs and the views to render...Home, About, Contact
-Route.on('/').render('home')
+Route.get('/', 'PostController.index')
 Route.on('/about').render('about')
 Route.on('/contact').render('contact')
