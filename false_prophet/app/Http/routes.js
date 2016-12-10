@@ -15,6 +15,10 @@
 | Route.resource('user', 'UserController')
 */
 
+//Create immutable variable to access the Route module
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+//Create connection to match the URLs and the views to render...Home, About, Contact
+Route.on('/').render('home')
+Route.on('/about').render('about')
+Route.on('/contact').render('contact')
